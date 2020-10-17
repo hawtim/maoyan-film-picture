@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [ "es2015", "dom" ],
+    "target": "es5",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "types",
+    "types" : ["request", "cheerio"]
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules"
+  ]
+}

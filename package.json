@@ -1,16 +1,37 @@
 {
-  "name": "maoyanpic",
+  "name": "maoyan-film-picture",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "抓取并下载猫眼电影图片的原图",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "multi",
+    "maoyan.com",
+    "film",
+    "picture",
+    "scrawler"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "node test/index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawtim/maoyan-film-picture.git"
+  },
+  "author": "hawtim<hawtimzhang@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hawtim/maoyan-film-picture/issues"
+  },
   "dependencies": {
+    "@types/cheerio": "^0.22.22",
+    "@types/request": "^2.48.5",
     "bagpipe": "^0.3.5",
     "cheerio": "^1.0.0-rc.3",
-    "request": "^2.88.0"
+    "request": "^2.88.2"
   }
 }
