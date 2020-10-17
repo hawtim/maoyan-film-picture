@@ -16,18 +16,18 @@ interface MaoYanFilmPicture {
 }
 
 interface ImageItem {
-  [property: string]: any
   src: string
   name: string
 }
 
 interface Options {
-  [property: string]: any
   url: string
   selector: string
   attr: string
   timeout: number
   target: string
+  handleSrc: (string: string) => string
+  handleName: (src: string) => string
 }
 
 class MaoYanFilmPicture {
